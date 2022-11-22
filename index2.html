@@ -32,6 +32,9 @@
     <!-- MY CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <!-- END MY CSS -->
+    <!-- my font awesome kit -->
+    <script src="https://kit.fontawesome.com/007cb67c30.js" crossorigin="anonymous"></script>
+    <!-- end font awesome -->
 </head>
 
 <body>
@@ -72,42 +75,22 @@
     <!-- End of Navbar -->
     <!-- https://stackoverflow.com/questions/26317679/how-to-add-hamburger-menu-in-bootstrap -->
     <!-- <div class = "container-fluid pt-2"> -->
-    <div class="container">
+    <div class="container" id = "nav-container">
         <div class="row logo-container d-flex">
-            <div class="col-11 text-left mr-auto" style="z-index: 999;">
+            <div class="col-10 col-md-11 text-left mr-auto" style="z-index: 999;">
                 <h1 class="logo-drop-f">
                     <strong>morso&#x192;&fnof;icial</strong>
                 </h1>
             </div>
-            <div class="col-1 align-self-end text-right">
+            <div class="col-2 col-md-1 align-self-end text-right p-2">
                 <div>
-                    <span><i class="bi-chevron-down"></i></span>
+                    <span><i class="fa-solid fa-bars fa-2xl"></i></span>
+                    <!-- bi-list for burger -->
                 </div>
             </div>
-            <!-- <div class = "col-1 text-right">
-					<i class="bi-list" style="font-size: 4rem;"></i>
-					<h1 class ="text-light p-1">.</h1>
-				</div> -->
         </div>
     </div>
-    <!-- </div> -->
-    <div class="container-fluid bg-primary p-0 m-0">
-        <div class="container">
-            <div class="row text-center text-black">
-                <!-- hiding elements: https://getbootstrap.com/docs/4.0/utilities/display/ -->
-                <!-- 
-			<div class = "col-2 p-2 align-self-center">About Me</div>
-			<div class = "col-2 p-2 align-self-center">Project 1</div>
-			<div class = "col-2 p-2 align-self-center">Project 2</div>
-			<div class = "col-2 p-2 align-self-center">Project 3</div>
-			<div class = "col-2 p-2 align-self-center">Project 4</div>
-			<div class = "col-2 p-2 align-self-center">Contact Me</div>
-		 -->
-            </div>
-            <!-- close container inside of container fluidd -->
-        </div>
-    </div>
-    <div class="container">
+    <div class="container" id="content-container">
         <div class="row">
             <div class="col-sm-12 col-md-8 bg-dark p-0" id="mainpic">
                 <div class="bg-image aspect-8x3">
@@ -122,17 +105,17 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 p-0 text-left">
-                <div class="col-12 bg-success aspect-4 d-flex align-items-center" id="item1">
+                <div class="col-12 bg-success d-flex align-items-center itemx" id="item1">
                     <span class="text-beside-img"><a class="text-black text-decoration-none" href="#">BRANDS SEND THEIR FINAL TWEETS WITH TWITTER FUTURE UNCLEAR</a></span>
                 </div>
-                <div class="col-12 bg-danger aspect-4 d-flex align-items-center" id="item2">
-                    <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">AD AGE CMO CONFERENCE - FINAL CALL FOR TICKETS</a></p>
+                <div class="col-12 bg-danger d-flex align-items-center itemx" id="item2">
+                    <span class="text-beside-img"><a class="text-black text-decoration-none" href="#">AD AGE CMO CONFERENCE - FINAL CALL FOR TICKETS</a></span>
                 </div>
-                <div class="d-none col-12 bg-warning aspect-4" id="item3">
+                <div class="d-none col-12 bg-warning itemx" id="item3">
                     <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">MARKETING WINNERS AND LOSERS OF THE WEEK</a></p>
                 </div>
-                <div class="col-12 bg-info aspect-4 d-flex align-items-center" id="item4">
-                    <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">LAYOFFS AND BUDGET CUTS TRACKING ECONOMIC MOVES AND NEWS</a></p>
+                <div class="col-12 bg-info d-flex align-items-center itemx" id="item4">
+                    <span class="text-beside-img"><a class="text-black text-decoration-none" href="#">LAYOFFS AND BUDGET CUTS TRACKING ECONOMIC MOVES AND NEWS</a></span>
                 </div>
             </div>
         </div>
@@ -161,18 +144,6 @@
                     PRofile resume
                 </p>
             </div>
-            <!-- 	<div class = "col-6 p-3 text-justify">
-				<h3 class = "pb-3">About Capstone 1</h3>
-				<ol class = pl-4>
-					<li>
-						I was impressed at how easy it was for bootstrap to create elegant and responsive layouts so I wanted to do a <strong>magazine style</strong> layout for my capstone project. My inspiration for the layout is <a href="https://adage.com" target = "_blank">AdAge</a>, an online magazine.
-					</li>
-					<li>
-						For navigation, I wanted to do like a navbar on desktop machines and a hamburger drop down menu for mobile.
-					</li>
-				</ol>
-			</div>
-			 -->
             <div class="col-sm-12 col-lg-4 p-3 text-left">
                 <div class="row" id="img-gallery">
                     <div class="col-6">

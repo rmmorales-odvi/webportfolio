@@ -32,6 +32,9 @@
     <!-- MY CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <!-- END MY CSS -->
+    <!-- my font awesome kit -->
+    <script src="https://kit.fontawesome.com/007cb67c30.js" crossorigin="anonymous"></script>
+    <!-- end font awesome -->
 </head>
 
 <body>
@@ -72,140 +75,134 @@
     <!-- End of Navbar -->
     <!-- https://stackoverflow.com/questions/26317679/how-to-add-hamburger-menu-in-bootstrap -->
     <!-- <div class = "container-fluid pt-2"> -->
-    <div class="container">
+    <div class="container" id="nav-container">
         <div class="row logo-container d-flex">
-            <div class="col-11 text-left mr-auto" style="z-index: 999;">
+            <div class="col-9 col-md-10 text-left mr-auto" style="z-index: 999;">
                 <h1 class="logo-drop-f">
                     <strong>morso&#x192;&fnof;icial</strong>
                 </h1>
             </div>
-            <div class="col-1 align-self-end text-right">
+            <div class="col-3 col-md-2 align-self-end text-right p-2">
                 <div>
-                    <span><i class="bi-chevron-down"></i></span>
+                    <span><i class="fa-solid fa-bars fa-2xl"></i></span>
+                    <!-- bi-list for burger -->
                 </div>
             </div>
-            <!-- <div class = "col-1 text-right">
-					<i class="bi-list" style="font-size: 4rem;"></i>
-					<h1 class ="text-light p-1">.</h1>
-				</div> -->
         </div>
     </div>
-    <!-- </div> -->
-    <div class="container-fluid bg-primary p-0 m-0">
-        <div class="container">
-            <div class="row text-center text-black">
-                <!-- hiding elements: https://getbootstrap.com/docs/4.0/utilities/display/ -->
-                <!-- 
-			<div class = "col-2 p-2 align-self-center">About Me</div>
-			<div class = "col-2 p-2 align-self-center">Project 1</div>
-			<div class = "col-2 p-2 align-self-center">Project 2</div>
-			<div class = "col-2 p-2 align-self-center">Project 3</div>
-			<div class = "col-2 p-2 align-self-center">Project 4</div>
-			<div class = "col-2 p-2 align-self-center">Contact Me</div>
-		 -->
-            </div>
-            <!-- close container inside of container fluidd -->
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-8 bg-dark p-0" id="mainpic">
+    <div class="container" id="content-container">
+        <div class="row d-flex">
+            <div v class="col-sm-12 col-md-8 bg-dark p-0" id="mainpic">
                 <div class="bg-image aspect-8x3">
-                    <img src="https://place-puppy.com/1200x450" class="img-fluid">
+                    <img src="./images/gallery_1.jpg" class="img-fluid">
                     <!-- mask -->
                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
                         <div class="text">
-                            <p class="text-on-img">UBER'S NEW HOLIDAY SPOT OFFERS PEOPLE AN ESCAPE FROM FAMILY DRAMA</p>
+                            <p class="text-on-img">PERSONAL PORTFOLIO WEBSITE STYLED AS A RESPONSIVE ONLINE MAGAZINE</p>
+                            <p class = "text-light d-none d-sm-inline-block">HTML, CSS, Bootstrap, GitLab</p>
                         </div>
                     </div>
                     <!-- end mask -->
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 p-0 text-left">
-                <div class="col-12 bg-success aspect-4 d-flex align-items-center" id="item1">
-                    <span class="text-beside-img"><a class="text-black text-decoration-none" href="#">BRANDS SEND THEIR FINAL TWEETS WITH TWITTER FUTURE UNCLEAR</a></span>
+            <div class="col-sm-12 col-md-4 p-0 text-left order-5 order-md-2">
+                <div class="d-md-none">
+                    <h4>Other Projects</h4>
                 </div>
-                <div class="col-12 bg-danger aspect-4 d-flex align-items-center" id="item2">
-                    <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">AD AGE CMO CONFERENCE - FINAL CALL FOR TICKETS</a></p>
+                <div class="col-12 bg-success d-flex flex-column align-items-left justify-content-center itemx" id="item1">
+                    <span class="text-beside-img">
+                        <a class="text-light text-decoration-none" href="#">DIGITAL AND PHYSICAL IT INVENTORY SOFTWARE AS A SERVICE</a>
+                    </span>
+                    <p class = "text-light d-none d-lg-inline-block" style = "font-size:0.8em">McFlurry, ReactJS, MongoDB, Bootstrap, Tonkatsu</p>
                 </div>
-                <div class="d-none col-12 bg-warning aspect-4" id="item3">
-                    <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">MARKETING WINNERS AND LOSERS OF THE WEEK</a></p>
+                <div class="col-12 bg-danger d-flex flex-column align-items-left justify-content-center itemx" id="item2">
+                    <span class="text-beside-img"><a class="text-light text-decoration-none" href="#">SOCIAL MEDIA ECOMMERCE WEBSITE WITH PUBLIC AUCTIONS</a></span>
+                    <p class = "text-light d-none d-lg-inline-block" style = "font-size:0.8em">NodeJS, ReactJS, MongoDB, Bootstrap, GitLab</p>
                 </div>
-                <div class="col-12 bg-info aspect-4 d-flex align-items-center" id="item4">
-                    <p class="text-beside-img"><a class="text-black text-decoration-none" href="#">LAYOFFS AND BUDGET CUTS TRACKING ECONOMIC MOVES AND NEWS</a></p>
+                <div class="d-none col-12 bg-warning itemx" id="item3">
+                    <p class="text-beside-img"><a class="text-dark" href="#">MARKETING WINNERS AND LOSERS OF THE WEEK</a></p>
+                </div>
+                <div class="col-12 bg-info d-flex flex-column align-items-left justify-content-center itemx" id="item4">
+                    <span class="text-beside-img"><a class="text-light text-decoration-none" href="#">REALTIME LEADS MANAGEMENT SYSTEM FOR MICROFINANCE</a></span>
+                    <p class = "text-light d-none d-lg-inline-block" style = "font-size:0.8em">MySQL, NodeJS, ReactJS, Bootstrap, GitLab</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 p-3 text-justify order-2 order-md-3">
+                <!-- <h3 class = "pb-3">About Me</h3> -->
+                <p><span class="drop-cap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h4>Problem</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 p-3 text-justify order-3 order-md-4">
+                <!-- <h3 class = "pb-3">About Me</h3> -->
+                <h4>Approach/Methodology</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h4>Main Features</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-sm-12 col-lg-4 text-left order-4 order-md-5 p-0">
+                <div>
+                    <h4>Screenshots / Features</h4>
+                </div>
+                <div class="row d-flex justify-content-between" id="img-gallery">
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="./images/absolute-positioning.png">
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="https://place-puppy.com/1600x900">
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="./images/responsive-layout.png" data-toggle="modal" data-target="#exampleModal">
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="./images/responsive-gallery.png">
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="./images/modal-zoom.png">
+                    </div>
+                    <div class="col-4 col-md-2 col-lg-6 mb-4">
+                        <img class="img-fluid" src="./images/dynamic-font-scaling.png">
+                    </div>
+                </div>
+                <div>
+                    <h4>Related Links</h4>
+                    <p><strong>Code Repository: </strong><a href="#">https://gitlab.com/batch-225-rmmorales/s09</a></p>
+                    <p><strong>Resources: </strong><a href="#">https://gitlab.com/batch-225-rmmorales/s09</a></p>
                 </div>
             </div>
         </div>
-        <div class="row pt-2">
-            <div class="col-xs-12 col-sm-6 col-lg-4 p-3 text-justify">
-                <!-- <h3 class = "pb-3">About Me</h3> -->
-                <p><span class="drop-cap">R</span>afael Morales or Mors for short. Aspiring software developer. I was inspired by my officemate who I saw coding his own website/application. This was surprising to me since he explained to me that he didn't have any computer or IT background and that everything he is doing he learned from the Zuitt Bootcamp. I though it would be useful for me to take the bootcamp as well as I do a lot of project management for software development projects and I thought having an internal development team would eliminate a lot of the headaches of working with outsourced/freelance developers. I also dream of doing a tech start up like the officemate who inspired me to do this bootcamp.</p>
-                <p>
-                    You may contact me at insert table here.
-                    number/viber/whatsapp
-                    email
-                </p>
-                <p>
-                    PRofile resume
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4 p-3 text-justify">
-                <!-- <h3 class = "pb-3">About Me</h3> -->
-                <p>Rafael Morales or Mors for short. Aspiring software developer. I was inspired by my officemate who I saw coding his own website/application. This was surprising to me since he explained to me that he didn't have any computer or IT background and that everything he is doing he learned from the Zuitt Bootcamp. I though it would be useful for me to take the bootcamp as well as I do a lot of project management for software development projects and I thought having an internal development team would eliminate a lot of the headaches of working with outsourced/freelance developers. I also dream of doing a tech start up like the officemate who inspired me to do this bootcamp.</p>
-                <p>
-                    You may contact me at insert table here.
-                    number/viber/whatsapp
-                    email
-                </p>
-                <p>
-                    PRofile resume
-                </p>
-            </div>
-            <!-- 	<div class = "col-6 p-3 text-justify">
-				<h3 class = "pb-3">About Capstone 1</h3>
-				<ol class = pl-4>
-					<li>
-						I was impressed at how easy it was for bootstrap to create elegant and responsive layouts so I wanted to do a <strong>magazine style</strong> layout for my capstone project. My inspiration for the layout is <a href="https://adage.com" target = "_blank">AdAge</a>, an online magazine.
-					</li>
-					<li>
-						For navigation, I wanted to do like a navbar on desktop machines and a hamburger drop down menu for mobile.
-					</li>
-				</ol>
-			</div>
-			 -->
-            <div class="col-sm-12 col-lg-4 p-3 text-left">
-                <div class="row" id="img-gallery">
-                    <div class="col-6">
-                        <figure>
-                            <img class="img-fluid" src="https://place-puppy.com/1600x900">
-                            <figcaption>Figure 1: Screenshot of UI/Navigation</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-6">
-                        <figure>
-                            <img class="img-fluid" src="https://place-puppy.com/1600x900" data-toggle="modal" data-target="#exampleModal">
-                            <figcaption>Figure 1: Screenshot of UI/Navigation</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <p><strong>Code Repository: </strong><a href="#">https://gitlab.com/batch-225-rmmorales/s09</a></p>
-                <p><strong>Helpful Links: </strong><a href="#">https://gitlab.com/batch-225-rmmorales/s09</a></p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-12">
-                <p>Go to Home <span><i class="bi-chevron-down"></i></span></p>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center bg-black text-light">
+            <div class="col-12 text-center">
+                @morsofficial
                 <!-- use split button dropdown for navigation? -->
             </div>
         </div>
     </div>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-lg modal-xl modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <figure>
