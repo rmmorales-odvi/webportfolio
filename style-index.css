@@ -1,0 +1,68 @@
+body {
+    font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Paytone One";
+}
+
+
+
+.logo{
+    font-family: "Halant";
+    font-size: 14vmin;
+    color: white;
+
+}
+
+.cover-header{
+    font-size: 4vmin;
+}
+.cover-sub{
+    font-size: 1.5vmin;
+}
+.container {
+    max-width: 1600px;
+}
+
+/*https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div*/
+#centered-div {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("./images/portrait.jpg"); 
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    margin-top: -300px;
+    margin-left: -300px;
+}
+
+/*https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div*/
+.centered-div {
+    width: min(100vw, 100vh/11*8.5);
+    height: min(100vh, 100vw/8.5*11);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("./images/portrait.jpg"); 
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    margin-top: calc(min(100vh, 100vw/8.5*11)/-2);
+    margin-left: calc(min(100vw, 100vh/11*8.5)/-2);
+}
+
+a {
+    color:inherit;
+}
+
+a:hover{
+    color:inherit;
+    text-decoration-color: white;
+}
