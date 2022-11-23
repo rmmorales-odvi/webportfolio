@@ -18,6 +18,14 @@ h4 {
 
 }
 
+
+#sublogo{
+    font-family: "Halant";
+    font-size: 14vmin;
+    color: black;
+
+}
+
 .cover-header{
     font-size: 4vmin;
 }
