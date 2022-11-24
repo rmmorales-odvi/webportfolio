@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <title>About us</title>
     <!-- RESET CSS -->
     <style>
     * {
@@ -25,50 +25,58 @@
     <!-- LINK BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- END LINK BOOTSTRAP CSS -->
-    <link rel="stylesheet" type="text/css" href="./style-index.css">
+    <!-- link bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- end bootstrap icons -->
+    <!-- bootsrap5 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <!-- end 5 -->
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="./style-about.css">
+    <!-- END MY CSS -->
 </head>
 
-<body style="background-color: black;">
-    <div class="container d-flex flex-column justify-content-around align-items-center vh-100" style="background-image: url('./images/magazines2.jpg'); background-size: contain;">
-        <div class="centered-div">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- <h1 class="logo"> -->
-                    <strong class="logo">morso&#x192;&fnof;icial</strong>
-                    <!-- </h1> -->
-                </div>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="about-logo" href="#">morso&#x192;&fnof;icial</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <strong><a class="nav-link" href="./index.html">Home</a></strong>
+                    </li>
+                    <li class="nav-item active">
+                        <strong><a class="nav-link" href="#">About me <span class="sr-only">(current)</span></a></strong>
+                    </li>
+                    <li class="nav-item">
+                        <strong><a class="nav-link" href="./project1.html">Projects</a></strong>
+                    </li>
+                    <li class="nav-item">
+                        <strong><a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-xl">Contact</a></strong>
+                    </li>
+                </ul>
             </div>
-            <div class="row d-flex p-5" style="position:absolute;bottom:40%">
-                <!-- about us link -->
-                <div class="col-4 text-light mr-auto">
-                    <a href="./about.html">
-                        <h4 class="m-0 text-warning cover-header">Everyone's talking about Mors</h4>
-                        <small class="cover-sub">Get to know the man behind the digital creations. Where it all started.</small>
-                    </a>
-                </div>
-                <!-- gallery link -->
-                <div class="col-4 text-light text-right">
-                    <a href="./project1.html">
-                        <h4 class="m-0 text-warning cover-header">Check out some of my handiwork</h4>
-                        <small class="cover-sub">My portfolio showing my best work in front-end, back-end and full-stack development.</small>
-                    </a>
-                </div>
-            </div>
-            <div class="row d-flex p-5 align-items-end" style="position:absolute;bottom:0">
-                <!-- work with me link -->
-                <div class="col-3 text-light mr-auto text-light text-center">
-                    <small class="cover-sub">NOV 2022</small>
-                    <img src="./images/barcode.png" class="w-100">
-                </div>
-                <div class="col-5 text-light text-right ml-auto">
-                    <a href="#" data-toggle="modal" data-target=".bd-example-modal-xl">
-                        <h4 class="m-0 text-warning cover-header">Secret tip to crush your competition.</h4>
-                        <small class="cover-sub">Leave a message here if you want to work with me.</small>
-                    </a>
-                </div>
+        </nav>
+    </div>
+    <div class="container pt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-3">
+                <img src="./images/portrait.jpg" class="rounded-circle" style="object-fit: cover; width:200px; height:200px">
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-4 text-center">
+                <H1>Rafael Norman Morales aka Mors</H1>
+                <small>Full Stack Web Developer</small>
+            </div>
+        </div>
+    </div>
+
     <!-- contact us modal -->
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg p-0">

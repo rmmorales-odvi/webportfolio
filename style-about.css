@@ -28,7 +28,7 @@ h4 {
 
 #about-logo {
     font-family: "Halant";
-    font-size: 3vmin;
+    font-size: max(3vmin,2em);
     color: black;
 
 }
@@ -40,7 +40,7 @@ h4 {
 }
 
 .form-headers {
-font-family: "Paytone One";
+    font-family: "Paytone One";
     font-size: 4vmin;
     color: black;
 
@@ -53,9 +53,7 @@ font-family: "Paytone One";
     font-size: 1.5vmin;
 }
 
-.container {
-    max-width: 1600px;
-}
+
 
 /*https://stackoverflow.com/questions/15376634/how-can-i-center-a-div-within-another-div*/
 #centered-div {
