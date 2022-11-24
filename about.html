@@ -36,8 +36,8 @@
     <!-- END MY CSS -->
 </head>
 
-<body>
-    <div class="container">
+<body style="background-color: black;">
+    <div class="container bg-light vh-100">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" id="about-logo" href="#">morso&#x192;&fnof;icial</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,23 +60,33 @@
                 </ul>
             </div>
         </nav>
-    </div>
-    <div class="container pt-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-3">
-                <img src="./images/portrait.jpg" class="rounded-circle" style="object-fit: cover; width:200px; height:200px">
-            </div>
+        <div class="col-12 col-md-4 offset-md-4 text-center">
+            <img src="./images/portrait.jpg" class="rounded-circle" style="object-fit: cover; width:200px; height:200px">
         </div>
-    </div>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-4 text-center">
-                <H1>Rafael Norman Morales aka Mors</H1>
-                <small>Full Stack Web Developer</small>
-            </div>
+        <div class="col-12 col-md-6 offset-md-3 text-center">
+            <H1>Rafael Norman Morales aka Mors</H1>
+            <p><strong>Full Stack Web Developer</strong></p>
         </div>
-    </div>
+        <div class = "row">
+        	<div class="col-12 col-md-6">
+        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	</div>
+        	<div class="col-12 col-md-6">
+        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        	</div>
+        </div>
 
+    </div>
     <!-- contact us modal -->
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg p-0">
@@ -84,7 +94,7 @@
                 <div class="row">
                     <div class="col-1 border border-dark h-100 d-none d-lg-flex align-items-center">
                         <div class="position-absolute">
-                            <p class=" form-headers rotate" style= "transform:rotate(180deg) translate(0.25em,0);">Leave a message here</h1>
+                            <p class=" form-headers rotate" style="transform:rotate(180deg) translate(0.25em,0);">Leave a message here</h1>
                         </div>
                     </div>
                     <div class="col-12 col-lg-11 border border-dark">
@@ -117,7 +127,7 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label" for="defaultCheck1" style="position:absolute; bottom:0;right:0">
                                     Name
                                 </label>
                             </div>
@@ -127,7 +137,7 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label" for="defaultCheck1" style="position:absolute; bottom:0;right:0">
                                     Email
                                 </label>
                             </div>
@@ -137,7 +147,7 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label" for="defaultCheck1" style="position:absolute; bottom:0;right:0">
                                     Mobile Number
                                 </label>
                             </div>
@@ -147,7 +157,7 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label for="exampleFormControlTextarea1" style = "position:absolute; top:10%;right:0">Message</label>
+                                <label for="exampleFormControlTextarea1" style="position:absolute; top:10%;right:0">Message</label>
                             </div>
                             <div class="col-9">
                                 <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="5" cols="25"></textarea>
