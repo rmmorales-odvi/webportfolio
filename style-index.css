@@ -1,5 +1,6 @@
 body {
     font-family: "Montserrat";
+    background-color: black;
 }
 
 h1,
@@ -32,6 +33,7 @@ h4 {
     color: black;
 
 }
+
 #formlogo {
     font-family: "Halant";
     font-size: 7vmin;
@@ -40,11 +42,12 @@ h4 {
 }
 
 .form-headers {
-font-family: "Paytone One";
+    font-family: "Paytone One";
     font-size: 4vmin;
     color: black;
 
 }
+
 .cover-header {
     font-size: 4vmin;
 }
@@ -106,20 +109,55 @@ a:hover > small {
 }*/
 
 .rotate {
-    writing-mode:vertical-rl;
+    writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
 
 .tabs {
-    margin-top:5px;
+    margin-top: 5px;
     margin-left: 5px;
-    padding:2px;
-    max-width:30px;
+    padding: 2px;
+    max-width: 30px;
 
 
 }
 
 .rotate2 {
-    writing-mode:vertical-rl;
-    transform: rotate(180deg) translate(.4em,0);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) translate(.4em, 0);
+}
+
+#leave-a-message {
+    transform: rotate(180deg) translate(0.25em, 0);
+
+}
+
+/*#leave-a-message-div {
+    top: 0;
+}*/
+
+.form-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.form-width {
+    width: 80%;
+    border-radius: 0;
+}
+
+#barcode {
+    position: absolute;
+    bottom: 0;
+}
+
+#about-us-row {
+    position: absolute;
+    bottom: 40%;
+}
+
+#magazine-bg {
+    background-image: url('./images/magazines2.jpg');
+    background-size: contain;
 }

@@ -28,10 +28,11 @@ h4 {
 
 #about-logo {
     font-family: "Halant";
-    font-size: max(3vmin,2em);
+    font-size: max(3vmin, 2em);
     color: black;
 
 }
+
 #formlogo {
     font-family: "Halant";
     font-size: 7vmin;
@@ -45,6 +46,7 @@ h4 {
     color: black;
 
 }
+
 .cover-header {
     font-size: 4vmin;
 }
@@ -104,20 +106,44 @@ a:hover > small {
 }*/
 
 .rotate {
-    writing-mode:vertical-rl;
+    writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
 
 .tabs {
-    margin-top:5px;
+    margin-top: 5px;
     margin-left: 5px;
-    padding:2px;
-    max-width:30px;
+    padding: 2px;
+    max-width: 30px;
 
 
 }
 
 .rotate2 {
-    writing-mode:vertical-rl;
-    transform: rotate(180deg) translate(.4em,0);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) translate(.4em, 0);
+}
+
+#leave-a-message {
+    transform: rotate(180deg) translate(0.25em, 0);
+
+}
+
+/*#leave-a-message-div {
+    top: 0;
+}*/
+
+.form-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.form-width {
+    width: 80%;
+    border-radius: 0;
+}
+
+body {
+    background-color: black;
 }

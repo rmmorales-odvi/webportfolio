@@ -28,8 +28,8 @@
     <link rel="stylesheet" type="text/css" href="./style-index.css">
 </head>
 
-<body style="background-color: black;">
-    <div class="container d-flex flex-column justify-content-around align-items-center vh-100" style="background-image: url('./images/magazines2.jpg'); background-size: contain;">
+<body>
+    <div class="container d-flex flex-column justify-content-around align-items-center vh-100" id = "magazine-bg">
         <div class="centered-div">
             <div class="row">
                 <div class="col-12 text-center">
@@ -38,7 +38,7 @@
                     <!-- </h1> -->
                 </div>
             </div>
-            <div class="row d-flex p-5" style="position:absolute;bottom:40%">
+            <div class="row d-flex p-5" id = "about-us-row">
                 <!-- about us link -->
                 <div class="col-4 text-light mr-auto">
                     <a href="./about.html">
@@ -54,7 +54,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row d-flex p-5 align-items-end" style="position:absolute;bottom:0">
+            <div class="row d-flex p-5 align-items-end" id= "barcode">
                 <!-- work with me link -->
                 <div class="col-3 text-light mr-auto text-light text-center">
                     <small class="cover-sub">NOV 2022</small>
@@ -72,14 +72,14 @@
     <!-- contact us modal -->
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg p-0">
-            <div class="modal-content p-0" style="aspect-ratio: 1.5;">
+            <div class="modal-content p-0">
                 <div class="row">
-                    <div class="col-1 border border-dark h-100 d-none d-lg-flex align-items-center">
-                        <div class="position-absolute">
-                            <p class=" form-headers rotate" style= "transform:rotate(180deg) translate(0.25em,0);">Leave a message here</h1>
+                    <div class="col-1 h-100 d-none d-lg-flex align-items-center">
+                        <div>
+                            <p class=" form-headers rotate" id="leave-a-message">Leave a message here</h1>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-11 border border-dark">
+                    <div class="col-12 col-lg-11">
                         <div class="row">
                             <div class="col-12 d-flex align-items-center justify-content-center">
                                 <p class="form-headers">YES! I would like to work with Mors!</p1>
@@ -109,37 +109,37 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label form-label" for="defaultCheck1">
                                     Name
                                 </label>
                             </div>
                             <div class="col-9">
-                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark" type="text" style="width:80%;border-radius:0;">
+                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark form-width" type="text">
                             </div>
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label form-label" for="defaultCheck1">
                                     Email
                                 </label>
                             </div>
                             <div class="col-9">
-                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark" type="text" style="width:80%;border-radius:0;">
+                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark" type="text">
                             </div>
                         </div>
                         <div class="row p-2">
                             <div class="col-3 position-relative">
-                                <label class="form-check-label" for="defaultCheck1" style = "position:absolute; bottom:0;right:0">
+                                <label class="form-check-label form-label" for="defaultCheck1">
                                     Mobile Number
                                 </label>
                             </div>
                             <div class="col-9">
-                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark" type="text" style="width:80%;border-radius:0;">
+                                <input class="form-control form-control border-top-0 border-left-0 border-right-0 border-dark" type="text">
                             </div>
                         </div>
                         <div class="row p-2">
-                            <div class="col-3 position-relative">
-                                <label for="exampleFormControlTextarea1" style = "position:absolute; top:10%;right:0">Message</label>
+                            <div class="col-3 position-relative text-right">
+                                <label for="exampleFormControlTextarea1 form-label">Message</label>
                             </div>
                             <div class="col-9">
                                 <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="5" cols="25"></textarea>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="row p-2">
                             <div class="col-12 text-center">
-                                <button type="button" class="btn btn-light border border-dark">Send Message</button>
+                                <button type="button" class="btn btn-warning border border-dark">Send Message</button>
                             </div>
                         </div>
                     </div>
